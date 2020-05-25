@@ -31,8 +31,8 @@ fetch(apiURL)
       h1.textContent += ' (' + movie.director + ', ' + movie.release_date + ')';
 
       const p = document.createElement('p');
-      movie.description = movie.description.substring(0, 300);
-      p.textContent = `${movie.description}...`;
+      
+      p.textContent = `${movie.description}`;
 
       container.appendChild(card);
       card.appendChild(h1);
